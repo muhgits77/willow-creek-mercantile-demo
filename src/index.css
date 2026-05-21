@@ -1,0 +1,95 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+
+@media (min-width: 1024px) {
+  html {
+    scroll-padding-top: 130px;
+  }
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Cozy Farmhouse Palette - Refined to Editorial Aesthetic */
+  --color-farm-sage: #5A5A40;
+  --color-farm-sage-dark: #4A4A35;
+  --color-farm-sage-light: #848D78;
+  --color-farm-sage-pale: #F5F2EC;
+  --color-farm-clay: #C37B60;
+  --color-farm-clay-dark: #A2583E;
+  --color-farm-clay-light: #F0E4D9;
+  --color-farm-cream: #F9F6F1;
+  --color-farm-beige: #EBE7DF;
+  --color-farm-wood: #6B5E54;
+  --color-farm-wood-dark: #4A3F35;
+  --color-farm-charcoal: #4A3F35;
+}
+
+/* Custom Scrollbar styled for Farmhouse aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FCF9F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9D2C9;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5E7161;
+}
+
+/* Gingham Pattern Utility */
+.bg-gingham {
+  background-color: #ffffff;
+  background-image: 
+    linear-gradient(90deg, rgba(94, 113, 97, 0.04) 50%, transparent 50%),
+    linear-gradient(rgba(94, 113, 97, 0.04) 50%, transparent 50%);
+  background-size: 16px 16px;
+}
+
+.bg-gingham-clay {
+  background-color: #ffffff;
+  background-image: 
+    linear-gradient(90deg, rgba(192, 108, 84, 0.03) 50%, transparent 50%),
+    linear-gradient(rgba(192, 108, 84, 0.03) 50%, transparent 50%);
+  background-size: 14px 14px;
+}
+
+/* Rough paper background */
+.bg-parchment {
+  background-color: #FCF9F5;
+  background-image: radial-gradient(#F1ECE4 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Card hover scaling and styling */
+.farm-card-shadow {
+  box-shadow: 0 4px 20px -2px rgba(94, 113, 97, 0.08), 0 2px 4px -1px rgba(94, 113, 97, 0.04);
+}
+
+.farm-card-shadow:hover {
+  box-shadow: 0 10px 25px -4px rgba(94, 113, 97, 0.12), 0 4px 8px -2px rgba(94, 113, 97, 0.06);
+}
+
+/* Southern botanical ornament drawing line */
+.farmhouse-divider::before,
+.farmhouse-divider::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px dashed #D9D2C9;
+  margin: auto;
+}

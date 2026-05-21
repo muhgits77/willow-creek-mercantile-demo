@@ -1,0 +1,8 @@
+{
+  "name": "Willow Creek Mercantile",
+  "description": "Charming farmhouse and country primitive home decor & gift shop in Pine Hollow, Kentucky.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
